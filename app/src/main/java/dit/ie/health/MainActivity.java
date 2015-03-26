@@ -4,6 +4,11 @@ package dit.ie.health;//default package
 //all the imports
 import android.app.Activity;
 import android.os.Bundle;
+import android.content.IntentSender;
+import android.location.Location;
+import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
@@ -23,6 +28,7 @@ import android.widget.ExpandableListView.OnGroupExpandListener;
 import android.widget.ExpandableListView.OnGroupCollapseListener;
 import android.widget.TextView;
 import android.widget.Toast;
+
 
 
 
@@ -144,3 +150,4 @@ public class MainActivity extends Activity {
         listDataChild.put(listDataHeader.get(5), HEALTHY_FOODS_DATABASE);
     }
 }
+

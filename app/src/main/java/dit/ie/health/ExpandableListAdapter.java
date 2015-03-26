@@ -1,7 +1,6 @@
 package dit.ie.health;
-/**
- * Created by grzegorzgietka on 24/03/15.
- */
+
+//imports
 import java.util.HashMap;
 import java.util.List;
 import android.content.Context;
