@@ -59,10 +59,12 @@ public class MainActivity extends Activity {
         prepareListData();
 
 
-        // Listview Group expanded listener, display when expanded
+        // Listview Group expanded listener,
+        // What to display whenexpanded
         expListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
 
-
+            //displays what has been clicked
+            //update it for further changes
             @Override
             public void onGroupExpand(int groupPosition)
             {
@@ -77,9 +79,12 @@ public class MainActivity extends Activity {
 
 
 
-        // Listview Group collasped listener, display when collapsed
-       /* expListView.setOnGroupCollapseListener(new OnGroupCollapseListener() {
+        // Listview Group collasped listener,
+        // What to display when list is being collapsed
+        expListView.setOnGroupCollapseListener(new OnGroupCollapseListener() {
 
+            //displays what has been clicked
+            //update it for further changes
             @Override
             public void onGroupCollapse(int groupPosition) {
                 Toast.makeText(getApplicationContext(),
@@ -87,7 +92,7 @@ public class MainActivity extends Activity {
                         Toast.LENGTH_SHORT).show();
 
             }
-        });*/
+        });
 
         listAdapter = new ExpandableListAdapter(this, listDataHeader, listDataChild);
 
@@ -98,14 +103,15 @@ public class MainActivity extends Activity {
 
 
     /*
-     * Preparing the list data
+     * Fill the array with values
+     * each menu itiem has a name
      */
     private void prepareListData()
     {
         listDataHeader = new ArrayList<String>();
         listDataChild = new HashMap<String, List<String>>();
 
-        // Adding child data
+        // Adding child data, headings
         listDataHeader.add("USER DATA");
         listDataHeader.add("STEPS");
         listDataHeader.add("CALCULATE CALORIES");
