@@ -20,6 +20,7 @@ import android.widget.Button;
 import android.widget.ExpandableListView;
 import android.widget.ExpandableListView.OnChildClickListener;
 import android.widget.ExpandableListView.OnGroupExpandListener;
+import android.widget.ExpandableListView.OnGroupCollapseListener;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -64,7 +65,6 @@ public class MainActivity extends Activity {
         expListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
 
             //displays what has been clicked
-            //update it for further changes
             @Override
             public void onGroupExpand(int groupPosition)
             {
@@ -79,12 +79,9 @@ public class MainActivity extends Activity {
 
 
 
-        // Listview Group collasped listener,
-        // What to display when list is being collapsed
+        // Listview Group collasped listener, display when collapsed
         expListView.setOnGroupCollapseListener(new OnGroupCollapseListener() {
 
-            //displays what has been clicked
-            //update it for further changes
             @Override
             public void onGroupCollapse(int groupPosition) {
                 Toast.makeText(getApplicationContext(),
@@ -103,15 +100,14 @@ public class MainActivity extends Activity {
 
 
     /*
-     * Fill the array with values
-     * each menu itiem has a name
+     * Preparing the list data
      */
     private void prepareListData()
     {
         listDataHeader = new ArrayList<String>();
         listDataChild = new HashMap<String, List<String>>();
 
-        // Adding child data, headings
+        // Adding child data
         listDataHeader.add("USER DATA");
         listDataHeader.add("STEPS");
         listDataHeader.add("CALCULATE CALORIES");

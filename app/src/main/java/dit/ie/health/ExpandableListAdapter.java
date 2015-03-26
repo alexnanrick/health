@@ -1,12 +1,9 @@
 package dit.ie.health;
-
-
 /**
  * Created by grzegorzgietka on 24/03/15.
  */
 import java.util.HashMap;
 import java.util.List;
-
 import android.content.Context;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
@@ -15,7 +12,8 @@ import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
-public class ExpandableListAdapter extends BaseExpandableListAdapter {
+public class ExpandableListAdapter extends BaseExpandableListAdapter
+{
 
     private Context _context;
     private List<String> _listDataHeader; // header titles
