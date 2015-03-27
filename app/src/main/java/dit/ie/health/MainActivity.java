@@ -128,10 +128,6 @@ public class MainActivity extends Activity implements SensorEventListener  {
         expListView.setAdapter(listAdapter);
     }
 
-
-
-
-
     /*
      * Preparing the list data
      */
