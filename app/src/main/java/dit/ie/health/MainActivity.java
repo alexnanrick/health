@@ -13,8 +13,12 @@ import android.location.Location;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ExpandableListView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -72,7 +76,16 @@ public class MainActivity extends Activity implements SensorEventListener  {
             public boolean onChildClick(ExpandableListView parent, View v,int groupPosition, int childPosition, long id)
             {
 
-                textView.setText("Step Counter TEST : " + step);
+                //display steps if steps area clicked
+                if(childPosition == 0 && groupPosition == 1)
+                {
+                    textView.setText("Step Counter TEST : " + step);
+                }
+                else
+                {
+                    textView.setText("");
+                }
+
 
                 Toast.makeText(getApplicationContext(), listDataHeader.get(groupPosition) + " : " +
                         listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition), Toast.LENGTH_SHORT).show();
@@ -171,6 +184,8 @@ public class MainActivity extends Activity implements SensorEventListener  {
         listDataChild.put(listDataHeader.get(3), WEIGHT);
         listDataChild.put(listDataHeader.get(4), EXERCISE);
         listDataChild.put(listDataHeader.get(5), HEALTHY_FOODS_DATABASE);
+
+
     }
 
     @Override
