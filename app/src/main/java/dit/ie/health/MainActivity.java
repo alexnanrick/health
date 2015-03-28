@@ -58,8 +58,6 @@ public class MainActivity extends Activity implements SensorEventListener  {
         // get the list view and text view
         expListView = (ExpandableListView) findViewById(R.id.lvExp);
         textView = (TextView) findViewById(R.id.textview);
-        final int step = 0;
-
 
         mSensorManager = (SensorManager)
                 getSystemService(Context.SENSOR_SERVICE);
@@ -79,7 +77,7 @@ public class MainActivity extends Activity implements SensorEventListener  {
                 //display steps if steps area clicked
                 if(childPosition == 0 && groupPosition == 1)
                 {
-                    textView.setText("Step Counter TEST : " + step);
+                    textView.setText("Steps taken: " + "  " + " " +   value);
                 }
                 else
                 {
@@ -87,8 +85,8 @@ public class MainActivity extends Activity implements SensorEventListener  {
                 }
 
 
-                Toast.makeText(getApplicationContext(), listDataHeader.get(groupPosition) + " : " +
-                        listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition), Toast.LENGTH_SHORT).show();
+               /* Toast.makeText(getApplicationContext(), listDataHeader.get(groupPosition) + " : " +
+                        listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition), Toast.LENGTH_SHORT).show();*/
 
                 return false;
             }
@@ -110,9 +108,9 @@ public class MainActivity extends Activity implements SensorEventListener  {
             @Override
             public void onGroupExpand(int groupPosition)
             {
-                Toast.makeText(getApplicationContext(),
+               /* Toast.makeText(getApplicationContext(),
                         listDataHeader.get(groupPosition) ,
-                        Toast.LENGTH_SHORT).show();
+                        Toast.LENGTH_SHORT).show();*/
 
 
 
@@ -128,9 +126,9 @@ public class MainActivity extends Activity implements SensorEventListener  {
 
             @Override
             public void onGroupCollapse(int groupPosition) {
-                Toast.makeText(getApplicationContext(),
+                /*Toast.makeText(getApplicationContext(),
                         listDataHeader.get(groupPosition) ,
-                        Toast.LENGTH_SHORT).show();
+                        Toast.LENGTH_SHORT).show();*/
 
             }
         });
@@ -150,12 +148,12 @@ public class MainActivity extends Activity implements SensorEventListener  {
         listDataChild = new HashMap<String, List<String>>();
 
         // Adding child data
-        listDataHeader.add("USER DATA");
-        listDataHeader.add("STEPS");
-        listDataHeader.add("CALCULATE CALORIES");
-        listDataHeader.add("WEIGHT");
-        listDataHeader.add("EXERCISE");
-        listDataHeader.add("HEALTHY FOODS DATABASE");
+        listDataHeader.add("Your Data");
+        listDataHeader.add("Steps");
+        listDataHeader.add("Calorie Calculator");
+        listDataHeader.add("Weight");
+        listDataHeader.add("Exercise");
+        listDataHeader.add("Food Database");
 
         // Adding child data
         List<String> USER_DATA = new ArrayList<String>();
@@ -163,7 +161,7 @@ public class MainActivity extends Activity implements SensorEventListener  {
         USER_DATA.add("OCCUPATION");
 
         List<String> STEPS = new ArrayList<String>();
-        STEPS.add("START COUNTING");
+        STEPS.add("STEPS TAKEN" + " " + value);
 
         List<String> CALCULATE_CALORIES = new ArrayList<String>();
         CALCULATE_CALORIES.add("RUN CALCULATOR");
@@ -185,26 +183,34 @@ public class MainActivity extends Activity implements SensorEventListener  {
         listDataChild.put(listDataHeader.get(4), EXERCISE);
         listDataChild.put(listDataHeader.get(5), HEALTHY_FOODS_DATABASE);
 
-
     }
 
+     int value = -1;
     @Override
-    public void onSensorChanged(SensorEvent event) {
+    public void onSensorChanged(SensorEvent event)
+    {
         Sensor sensor = event.sensor;
         float[] values = event.values;
-        int value = -1;
 
-        if (values.length > 0) {
+
+        if (values.length > 0)
+        {
             value = (int) values[0];
         }
 
-        if (sensor.getType() == Sensor.TYPE_STEP_COUNTER) {
+        if (sensor.getType() == Sensor.TYPE_STEP_COUNTER)
+        {
+
             textView.setText("Step Counter Detected : " + value);
-        } else if (sensor.getType() == Sensor.TYPE_STEP_DETECTOR) {
+
+        } else if (sensor.getType() == Sensor.TYPE_STEP_DETECTOR)
+        {
             // For test only. Only allowed value is 1.0 i.e. for step taken
             textView.setText("Step Detector Detected : " + value);
         }
     }
+
+
 
     protected void onResume() {
 
