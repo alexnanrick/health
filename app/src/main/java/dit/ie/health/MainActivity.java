@@ -16,6 +16,7 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ExpandableListView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -45,6 +46,24 @@ public class MainActivity extends Activity implements SensorEventListener  {
     List<String> listDataHeader;
     HashMap<String, List<String>> listDataChild;
 
+
+    EditText operand1;
+    EditText operand2;
+    Button btnPlus;
+    Button btnSubtract;
+    Button btnDivide;
+    Button btnMultiply;
+    Button btnClear;
+    TextView Result;
+
+
+
+
+
+
+
+
+
     private TextView textView;
     private SensorManager mSensorManager;
     private Sensor mStepCounterSensor;
@@ -56,6 +75,23 @@ public class MainActivity extends Activity implements SensorEventListener  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // get the list view and text view
+
+        operand1= (EditText) findViewById(R.id.editOperand1);
+        operand2= (EditText) findViewById(R.id.editOperand2);
+
+        //associate buttons;
+        btnPlus=(Button) findViewById(R.id.btnPlus);
+        btnSubtract=(Button) findViewById(R.id.btnSubtract);
+        btnDivide=(Button) findViewById(R.id.btnDivide);
+        btnMultiply=(Button) findViewById(R.id.btnMultiply);
+        btnClear=(Button) findViewById(R.id.btnClr);
+
+
+
+
+
+
+
         expListView = (ExpandableListView) findViewById(R.id.lvExp);
         textView = (TextView) findViewById(R.id.textview);
 
@@ -67,12 +103,34 @@ public class MainActivity extends Activity implements SensorEventListener  {
                 .getDefaultSensor(Sensor.TYPE_STEP_DETECTOR);
 
        // List view on child click listener, display after clicking
+
+        Result = (TextView) findViewById(R.id.textResult);
+
+        //add functionality
+
+        btnPlus.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                float oper1 = Float.parseFloat(operand1.getText().toString());
+                float oper2 = Float.parseFloat(operand2.getText().toString());
+
+                float theResult= oper1 + oper2;
+
+                Result.setText(Float.toString(theResult));
+
+            }
+        });
+
+
         expListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener()
         {
 
             @Override
             public boolean onChildClick(ExpandableListView parent, View v,int groupPosition, int childPosition, long id)
             {
+
 
                 //display steps if steps area clicked
                 if(childPosition == 0 && groupPosition == 1)
