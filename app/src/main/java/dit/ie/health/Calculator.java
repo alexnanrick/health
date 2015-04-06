@@ -1,7 +1,7 @@
-
 package dit.ie.health;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,8 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Calculator extends Activity {
-
+public class Calculator extends Activity
+{
     EditText operand1;
     EditText operand2;
     Button btnPlus;
@@ -22,111 +22,102 @@ public class Calculator extends Activity {
     TextView Result;
 
 
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_item);
+    public void onCreate(Bundle savedInstanceState)
+    {
+        btnPlus.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v)
+            {
+                Intent inf=new Intent(Calculator.this,MainActivity.class);
+
+                startActivity(inf);
+            }
+        });
 
         //operation fields from the main screen
-        operand1= (EditText) findViewById(R.id.editOperand1);
-        operand2= (EditText) findViewById(R.id.editOperand2);
+        operand1 = (EditText) findViewById(R.id.editOperand1);
+        operand2 = (EditText) findViewById(R.id.editOperand2);
 
         //associate buttons;
-        btnPlus=(Button) findViewById(R.id.btnPlus);
-        btnSubtract=(Button) findViewById(R.id.btnSubtract);
-        btnDivide=(Button) findViewById(R.id.btnDivide);
-        btnMultiply=(Button) findViewById(R.id.btnMultiply);
-        btnClear=(Button) findViewById(R.id.btnClr);
+        btnPlus = (Button) findViewById(R.id.btnPlus);
+        btnSubtract = (Button) findViewById(R.id.btnSubtract);
+        btnDivide = (Button) findViewById(R.id.btnDivide);
+        btnMultiply = (Button) findViewById(R.id.btnMultiply);
+        btnClear = (Button) findViewById(R.id.btnClr);
 
         //associate result textfield
-
         Result = (TextView) findViewById(R.id.textResult);
 
         //add functionality
-
-        btnPlus.setOnClickListener(new View.OnClickListener() {
-
+        btnPlus.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
+            public void onClick(View v)
+            {
                 float oper1 = Float.parseFloat(operand1.getText().toString());
                 float oper2 = Float.parseFloat(operand2.getText().toString());
-
                 float theResult= oper1 + oper2;
-
                 Result.setText(Float.toString(theResult));
-
             }
         });
 
 
-        btnSubtract.setOnClickListener(new View.OnClickListener() {
+        btnSubtract.setOnClickListener(new View.OnClickListener()
+        {
 
             @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
+            public void onClick(View v)
+            {
                 float oper1 = Float.parseFloat(operand1.getText().toString());
                 float oper2 = Float.parseFloat(operand2.getText().toString());
-
                 float theResult= oper1 - oper2;
-
                 Result.setText(Float.toString(theResult));
-
             }
         });
 
-        btnDivide.setOnClickListener(new View.OnClickListener() {
+        btnDivide.setOnClickListener(new View.OnClickListener()
+        {
 
             @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
+            public void onClick(View v)
+            {
                 float oper1 = Float.parseFloat(operand1.getText().toString());
                 float oper2 = Float.parseFloat(operand2.getText().toString());
-
                 float theResult= oper1 / oper2;
-
                 Result.setText(Float.toString(theResult));
-
             }
         });
 
 
-        btnMultiply.setOnClickListener(new View.OnClickListener() {
-
+        btnMultiply.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
+            public void onClick(View v)
+            {
                 float oper1 = Float.parseFloat(operand1.getText().toString());
                 float oper2 = Float.parseFloat(operand2.getText().toString());
-
                 float theResult= oper1 * oper2;
-
                 Result.setText(Float.toString(theResult));
-
             }
         });
 
-
-        btnClear.setOnClickListener(new View.OnClickListener() {
-
+        btnClear.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
+            public void onClick(View v)
+            {
                 operand1.setText("");
-
                 operand2.setText("");
                 Result.setText("0.00");
-
-
             }
         });
-
     }
 
-
-
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
