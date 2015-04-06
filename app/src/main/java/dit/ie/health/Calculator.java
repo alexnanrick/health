@@ -1,4 +1,4 @@
-package dit.ie.health;
+/*package dit.ie.health;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -131,4 +131,4 @@ public class Calculator extends Activity
         int id = item.getItemId();
         return id == R.id.action_settings || super.onOptionsItemSelected(item);
     }
-}
+}*/
