@@ -1,17 +1,13 @@
 package dit.ie.health;
-
 /**
  * Created by Zontzor on 2015-04-07.
  */
-
 import java.util.ArrayList;
 import java.util.List;
-
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -44,7 +40,7 @@ public class Login extends Activity implements OnClickListener{
     // private static final String LOGIN_URL = "http://xxx.xxx.x.x:1234/webservice/login.php";
 
     //testing on Emulator:
-    private static final String LOGIN_URL = "http://192.168.0.16/webservice/login.php";
+    private static final String LOGIN_URL = "http://192.168.3.1/webservice/login.php";
 
     //testing from a real server:
     //private static final String LOGIN_URL = "http://www.yourdomain.com/webservice/login.php";
@@ -161,7 +157,6 @@ public class Login extends Activity implements OnClickListener{
         }
 
     }
-
 
 }
 
