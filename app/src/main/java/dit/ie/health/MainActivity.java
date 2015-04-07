@@ -87,17 +87,14 @@ public class MainActivity extends Activity implements SensorEventListener
         prepareListData();
         // Listview Group expanded listener,
         // What to display when expanded
-        expListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+        expListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener()
+        {
 
             //displays what has been clicked
             @Override
             public void onGroupExpand(int groupPosition)
             {
-                if(groupPosition == 1)
-                {
 
-
-                }
                /* Toast.makeText(getApplicationContext(),
                         listDataHeader.get(groupPosition) ,
                         Toast.LENGTH_SHORT).show();*/
@@ -128,7 +125,7 @@ public class MainActivity extends Activity implements SensorEventListener
         // Adding child data
         listDataHeader.add("Steps");
         listDataHeader.add("Calorie Calculator");
-        listDataHeader.add("Weight");
+        listDataHeader.add("Check Your BMI");
         listDataHeader.add("Exercise");
         listDataHeader.add("Food Database");
 
@@ -141,7 +138,7 @@ public class MainActivity extends Activity implements SensorEventListener
         CALCULATE_CALORIES.add("BMI");
 
         List<String> WEIGHT = new ArrayList<String>();
-        WEIGHT.add("Check your weight");
+        WEIGHT.add("BMI");
 
         List<String> EXERCISE = new ArrayList<String>();
         EXERCISE.add("Start your daily exercise");
