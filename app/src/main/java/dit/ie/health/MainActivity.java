@@ -92,7 +92,7 @@ public class MainActivity extends Activity implements SensorEventListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //prepare and display user login button
+        // login button
         setupLoginButton();
 
 
@@ -134,12 +134,11 @@ public class MainActivity extends Activity implements SensorEventListener {
                if(childPosition == 0 && groupPosition == 1){
                    setContentView(R.layout.calc_view);
                }
-
-
                /* Toast.makeText(getApplicationContext(), listDataHeader.get(groupPosition) + " : " +
                         listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition), Toast.LENGTH_SHORT).show();*/
                 return false;}
         });
+
         // preparing list data
         prepareListData();
         // Listview Group expanded listener,

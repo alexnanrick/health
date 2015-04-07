@@ -40,7 +40,7 @@ public class Login extends Activity implements OnClickListener{
     // private static final String LOGIN_URL = "http://xxx.xxx.x.x:1234/webservice/login.php";
 
     //testing on Emulator:
-    private static final String LOGIN_URL = "http://192.168.3.1/webservice/login.php";
+    private static final String LOGIN_URL = "http://192.168.0.16/webservice/login.php";
 
     //testing from a real server:
     //private static final String LOGIN_URL = "http://www.yourdomain.com/webservice/login.php";
@@ -86,11 +86,11 @@ public class Login extends Activity implements OnClickListener{
         }
     }
 
+    // Use AsyncTask if you need to perform background tasks, but also need
+    // to change components on the GUI. Put the background operations in
+    // doInBackground. Put the GUI manipulation code in onPostExecute
     class AttemptLogin extends AsyncTask<String, String, String> {
 
-        /**
-         * Before starting background thread Show Progress Dialog
-         * */
         boolean failure = false;
 
         @Override
@@ -105,11 +105,13 @@ public class Login extends Activity implements OnClickListener{
 
         @Override
         protected String doInBackground(String... args) {
-            // TODO Auto-generated method stub
             // Check for success tag
             int success;
+
+            // strings for user data
             String username = user.getText().toString();
             String password = pass.getText().toString();
+
             try {
                 // Building Parameters
                 List<NameValuePair> params = new ArrayList<NameValuePair>();
@@ -117,9 +119,8 @@ public class Login extends Activity implements OnClickListener{
                 params.add(new BasicNameValuePair("password", password));
 
                 Log.d("request!", "starting");
-                // getting product details by making HTTP request
-                JSONObject json = jsonParser.makeHttpRequest(
-                        LOGIN_URL, "POST", params);
+                // getting details by making HTTP request
+                JSONObject json = jsonParser.makeHttpRequest(LOGIN_URL, "POST", params);
 
                 // check your log for json response
                 Log.d("Login attempt", json.toString());
@@ -127,11 +128,9 @@ public class Login extends Activity implements OnClickListener{
                 // json success tag
                 success = json.getInt(TAG_SUCCESS);
                 if (success == 1) {
-                    /*Log.d("Login Successful!", json.toString());
-                    Intent i = new Intent(Login.this, ReadComments.class);
+                    Log.d("Login Successful!", json.toString());
                     finish();
-                    startActivity(i);
-                    return json.getString(TAG_MESSAGE);*/
+                    return json.getString(TAG_MESSAGE);
                 }else{
                     Log.d("Login Failure!", json.getString(TAG_MESSAGE));
                     return json.getString(TAG_MESSAGE);
