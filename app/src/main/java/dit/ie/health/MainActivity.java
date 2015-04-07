@@ -126,7 +126,6 @@ public class MainActivity extends Activity implements SensorEventListener
         listDataHeader = new ArrayList<String>();
         listDataChild = new HashMap<String, List<String>>();
         // Adding child data
-        listDataHeader.add("Your Data");
         listDataHeader.add("Steps");
         listDataHeader.add("Calorie Calculator");
         listDataHeader.add("Weight");
@@ -134,8 +133,6 @@ public class MainActivity extends Activity implements SensorEventListener
         listDataHeader.add("Food Database");
 
         // Adding child data
-        List<String> USER_DATA = new ArrayList<String>();
-        USER_DATA.add("Profile");
 
         List<String> STEPS = new ArrayList<String>();
         STEPS.add("STEPS TAKEN" + " " + value);
@@ -154,12 +151,12 @@ public class MainActivity extends Activity implements SensorEventListener
         HEALTHY_FOODS_DATABASE.add("Item 2");
         HEALTHY_FOODS_DATABASE.add("Item 3");
 
-        listDataChild.put(listDataHeader.get(0), USER_DATA); // Header, Child data
-        listDataChild.put(listDataHeader.get(1), STEPS);
-        listDataChild.put(listDataHeader.get(2), CALCULATE_CALORIES);
-        listDataChild.put(listDataHeader.get(3), WEIGHT);
-        listDataChild.put(listDataHeader.get(4), EXERCISE);
-        listDataChild.put(listDataHeader.get(5), HEALTHY_FOODS_DATABASE);
+         // Header, Child data
+        listDataChild.put(listDataHeader.get(0), STEPS);
+        listDataChild.put(listDataHeader.get(1), CALCULATE_CALORIES);
+        listDataChild.put(listDataHeader.get(2), WEIGHT);
+        listDataChild.put(listDataHeader.get(3), EXERCISE);
+        listDataChild.put(listDataHeader.get(4), HEALTHY_FOODS_DATABASE);
     }//end prepareListData()
 
     int value = -1;
