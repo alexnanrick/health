@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/login"
+        android:layout_alignLeft="@+id/login"
+        android:layout_alignStart="@+id/login" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_below="@+id/TextView01"
+        android:layout_centerHorizontal="true">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="Login"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_below="@+id/username"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignEnd="@+id/textView1"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignStart="@+id/username"
+        android:layout_marginTop="105dp" />
+
+</RelativeLayout>

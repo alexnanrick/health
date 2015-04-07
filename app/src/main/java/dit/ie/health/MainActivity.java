@@ -2,6 +2,7 @@ package dit.ie.health;//default package
 //all the imports
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -37,6 +38,8 @@ public class MainActivity extends Activity implements SensorEventListener
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        setupLoginButton();
 
         // get the list view and text view
         expListView = (ExpandableListView) findViewById(R.id.lvExp);
@@ -204,5 +207,18 @@ public class MainActivity extends Activity implements SensorEventListener
     @Override
     public void onAccuracyChanged(Sensor sensor, int i) {
 
+    }
+
+    public void setupLoginButton() {
+        // 1. Reference button
+        Button loginButton = (Button) findViewById(R.id.loginButtonMain);
+
+        // 2. Set the click listener
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Login.class));
+            }
+        });
     }
 }
