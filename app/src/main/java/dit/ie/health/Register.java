@@ -1,8 +1,5 @@
 package dit.ie.health;
 
-/**
- * Created by Zontzor on 2015-04-07.
- */
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.http.NameValuePair;

@@ -3,6 +3,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="distance">Exercise.</string>
 
     <string name="step_counter">
          android.hardware.sensor.stepcounter

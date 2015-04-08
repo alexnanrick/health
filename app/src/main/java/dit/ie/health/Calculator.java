@@ -1,7 +1,6 @@
 package dit.ie.health;
 
 import android.app.Activity;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,8 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.view.View.OnClickListener;
 
-public class Calculator extends Activity{
+public class Calculator extends Activity implements OnClickListener{
 
     EditText operand1;
     EditText operand2;
@@ -22,13 +22,14 @@ public class Calculator extends Activity{
     Button btnClear;
     TextView Result;
 
+
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calc_view);
 
-        btnPlus.setOnClickListener(new View.OnClickListener() {
+        /*btnPlus.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v)
             {
@@ -36,7 +37,7 @@ public class Calculator extends Activity{
 
                 startActivity(inf);
             }
-        });
+        });*/
 
         //operation fields from the main screen
         operand1 = (EditText) findViewById(R.id.editOperand1);
@@ -133,5 +134,12 @@ public class Calculator extends Activity{
         int id = item.getItemId();
         return id == R.id.action_settings || super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onClick(View v) {
+        Intent i = new Intent(this, Calculator.class);
+        startActivity(i);
+    }
+
 
 }
