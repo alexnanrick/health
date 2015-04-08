@@ -45,7 +45,7 @@ public class MainActivity extends Activity implements SensorEventListener {
         setupLoginButton();
         setupExerciseButton();
         setupCalculatorButton();
-
+        setupFoodButton();
 
         stepButton = (Button) findViewById(R.id.stepButton);
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
@@ -110,7 +110,6 @@ public class MainActivity extends Activity implements SensorEventListener {
     public void onAccuracyChanged(Sensor sensor, int i) {
     }
 
-
     public void setupLoginButton() {
         // 1. Reference button
         Button loginButton = (Button) findViewById(R.id.loginButtonMain);
@@ -144,4 +143,15 @@ public class MainActivity extends Activity implements SensorEventListener {
             }
         });
     }//end setupCalculatorButton()
+
+    public void setupFoodButton() {
+
+        Button cButton = (Button) findViewById(R.id.foodButton);
+        cButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Food.class));
+            }
+        });
+    }//end setupFoodButton()
 }

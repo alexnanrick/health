@@ -44,6 +44,11 @@
             android:parentActivityName=".MainActivity"
             android:label="Calculator"
             android:theme="@style/AppTheme"/>
+
+        <activity android:name=".Food"
+            android:parentActivityName=".MainActivity"
+            android:label="Food"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>
