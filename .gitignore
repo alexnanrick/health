@@ -35,3 +35,8 @@ local.properties
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# more temp files
+app/app.iml
+app/src/main/res/layout/food_view.xml
+build/intermediates/dex-cache/cache.xml
