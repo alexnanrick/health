@@ -6,49 +6,56 @@
     android:weightSum="1"
     android:id="@+id/jog">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.03" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
-        android:src="@mipmap/ic_launcher" />
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/running" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/textView"
-        android:layout_gravity="right"
+        android:layout_gravity="center_horizontal"
         android:layout_weight="0.03" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView2"
-        android:src="@mipmap/ic_launcher" />
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/walking" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/textView2"
-        android:layout_gravity="right"
+        android:layout_gravity="center_horizontal"
         android:layout_weight="0.03" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView3"
-        android:src="@mipmap/ic_launcher" />
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/cycling" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/textView3"
-        android:layout_gravity="right"
+        android:layout_gravity="center_horizontal"
         android:layout_weight="0.03" />
-
-
 
 </LinearLayout>

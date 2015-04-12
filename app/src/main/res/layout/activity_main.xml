@@ -22,7 +22,7 @@
         android:layout_height="60dp"
         android:elevation="5dp"
         android:id="@+id/stepButton"
-        android:background="#007a3d"/>
+        android:background="#59194B"/>
 
     <Button
         android:id="@+id/exButton"
@@ -36,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="Exercise"
-        android:background="#007a3d"/>
+        android:background="#59194B"/>
 
     <Button
         android:id="@+id/foodButton"

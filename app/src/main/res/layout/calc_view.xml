@@ -43,7 +43,7 @@
         android:gravity="center"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
-        android:background="#0033CC"
+        android:background="#007a3d"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         >
@@ -97,9 +97,5 @@
         android:gravity="center"
         android:text="0.00"
         android:textAppearance="?android:attr/textAppearanceLarge" /> -->
-
-
-
-
 
 </LinearLayout>

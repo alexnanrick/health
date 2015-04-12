@@ -47,6 +47,7 @@ public class MainActivity extends Activity implements SensorEventListener {
         setupExerciseButton();
         setupCalculatorButton();
         setupFoodButton();
+        setupFoodButton();
 
         stepButton = (Button) findViewById(R.id.stepButton);
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);

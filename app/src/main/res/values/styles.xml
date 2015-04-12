@@ -1,11 +1,10 @@
 <resources>
-    <color name="background">#007a3d</color>
-    <color name="text">#000000</color>
+    <color name="background">#59194B</color>
+    <color name="text">#DADA55</color>
 
     <style name="AppTheme" >
         <item name="android:windowBackground">@color/background</item>
         <item name="android:textColor">@color/text</item>
-
     </style>
 
 
