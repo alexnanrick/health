@@ -17,7 +17,8 @@ public class MainActivity extends Activity implements SensorEventListener {
 
     //get exercise and calories values
     Exercise ex = new Exercise();
-    int calories = ex.getCalories();
+    float calories = ex.getCalories();
+
 
     //step sensor
     private int value = -1;
@@ -109,6 +110,7 @@ public class MainActivity extends Activity implements SensorEventListener {
     @Override
     public void onAccuracyChanged(Sensor sensor, int i) {
     }
+
 
     public void setupLoginButton() {
         // 1. Reference button

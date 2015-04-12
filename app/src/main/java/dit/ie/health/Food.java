@@ -10,10 +10,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.view.View.OnClickListener;
 
 import java.io.File;
 
-public  class Food extends Activity implements View.OnClickListener {
+public  class Food extends Activity implements OnClickListener {
 
     SQLiteDatabase foodDB = null;
 
@@ -37,6 +38,12 @@ public  class Food extends Activity implements View.OnClickListener {
         foodListEditText = (EditText) findViewById(R.id.foodListEditText);
         idEditText = (EditText) findViewById(R.id.idEditText);
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent i = new Intent(this, Food.class);
+        startActivity(i);
     }
 
     public void createDatabase(View view) {
@@ -155,11 +162,7 @@ public  class Food extends Activity implements View.OnClickListener {
         super.onDestroy();
     }
 
-    @Override
-    public void onClick(View v) {
-        Intent i = new Intent(this, Food.class);
-        startActivity(i);
-    }
+
 
 
 }
