@@ -28,21 +28,10 @@ public class Register extends Activity implements OnClickListener{
     // JSON parser class
     JSONParser jsonParser = new JSONParser();
 
-    //php login script
+    // testing on Emulator:
+    private static final String LOGIN_URL = "http://192.168.0.16/webservice/register.php";
 
-    //localhost :
-    //testing on your device
-    //put your local ip instead,  on windows, run CMD > ipconfig
-    //or in mac's terminal type ifconfig and look for the ip under en0 or en1
-    // private static final String LOGIN_URL = "http://xxx.xxx.x.x:1234/webservice/register.php";
-
-    //testing on Emulator:
-    private static final String LOGIN_URL = "http://10.0.2.2:1234/webservice/register.php";
-
-    //testing from a real server:
-    //private static final String LOGIN_URL = "http://www.yourdomain.com/webservice/register.php";
-
-    //ids
+    // ids
     private static final String TAG_SUCCESS = "success";
     private static final String TAG_MESSAGE = "message";
 
@@ -125,9 +114,7 @@ public class Register extends Activity implements OnClickListener{
             return null;
 
         }
-        /**
-         * After completing background task Dismiss the progress dialog
-         * **/
+        // After completing background task Dismiss the progress dialog
         protected void onPostExecute(String file_url) {
             // dismiss the dialog once product deleted
             pDialog.dismiss();
