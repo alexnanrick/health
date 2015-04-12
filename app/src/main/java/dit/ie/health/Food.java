@@ -36,7 +36,6 @@ public  class Food extends Activity implements OnClickListener {
         nameEditText = (EditText) findViewById(R.id.nameEditText);
         caloriesEditText = (EditText) findViewById(R.id.caloriesEditText);
         foodListEditText = (EditText) findViewById(R.id.foodListEditText);
-        idEditText = (EditText) findViewById(R.id.idEditText);
 
     }
 
@@ -48,7 +47,7 @@ public  class Food extends Activity implements OnClickListener {
 
     public void createDatabase(View view) {
 
-        try{
+        try {
 
             // Opens a current database or creates it
             // Pass the database name, designate that only this app can use it
@@ -71,7 +70,7 @@ public  class Food extends Activity implements OnClickListener {
 
         }
 
-        catch(Exception e){
+        catch(Exception e) {
 
             Log.e("FOOD ERROR", "Error Creating Database");
 
@@ -115,7 +114,7 @@ public  class Food extends Activity implements OnClickListener {
         // Verify that we have results
         if(cursor != null && (cursor.getCount() > 0)){
 
-            do{
+            do {
                 // Get the results and store them in a String
                 String id = cursor.getString(idColumn);
                 String name = cursor.getString(nameColumn);
@@ -124,7 +123,7 @@ public  class Food extends Activity implements OnClickListener {
                 foodList = foodList + id + " : " + name + " : " + calories + "\n";
 
                 // Keep getting results as long as they exist
-            }while(cursor.moveToNext());
+            } while(cursor.moveToNext());
 
             foodListEditText.setText(foodList);
 
@@ -139,11 +138,17 @@ public  class Food extends Activity implements OnClickListener {
 
     public void deleteFood(View view) {
 
-        // Get the id to delete
-        String id = idEditText.getText().toString();
+        // Get the name to delete
+        String name = nameEditText.getText().toString();
 
         // Delete matching id in database
-        foodDB.execSQL("DELETE FROM food WHERE id = " + id + ";");
+        try {
+            foodDB.execSQL("DELETE FROM food WHERE name = " + name + ";");
+        }
+
+        catch(Exception e) {
+            Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
+        }
 
     }
 
@@ -162,8 +167,5 @@ public  class Food extends Activity implements OnClickListener {
 
         super.onDestroy();
     }*/
-
-
-
 
 }

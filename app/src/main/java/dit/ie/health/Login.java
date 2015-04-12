@@ -30,26 +30,14 @@ public class Login extends Activity implements OnClickListener{
     JSONParser jsonParser = new JSONParser();
 
     //php login script location:
-
-    //localhost :
-    //testing on your device
-    //put your local ip instead,  on windows, run CMD > ipconfig
-    //or in mac's terminal type ifconfig and look for the ip under en0 or en1
-    // private static final String LOGIN_URL = "http://xxx.xxx.x.x:1234/webservice/login.php";
-
-    //testing on Emulator:
     private static final String LOGIN_URL = "http://192.168.0.16/webservice/login.php";
 
-    //testing from a real server:
-    //private static final String LOGIN_URL = "http://www.yourdomain.com/webservice/login.php";
-
-    //JSON element ids from repsonse of php script:
+    //JSON element ids from response of php script:
     private static final String TAG_SUCCESS = "success";
     private static final String TAG_MESSAGE = "message";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
@@ -84,9 +72,6 @@ public class Login extends Activity implements OnClickListener{
         }
     }
 
-    // Use AsyncTask if you need to perform background tasks, but also need
-    // to change components on the GUI. Put the background operations in
-    // doInBackground. Put the GUI manipulation code in onPostExecute
     class AttemptLogin extends AsyncTask<String, String, String> {
 
         boolean failure = false;
@@ -141,9 +126,7 @@ public class Login extends Activity implements OnClickListener{
             return null;
 
         }
-        /**
-         * After completing background task Dismiss the progress dialog
-         * **/
+        // After completing background task Dismiss the progress dialog
         protected void onPostExecute(String file_url) {
             // dismiss the dialog once product deleted
             pDialog.dismiss();

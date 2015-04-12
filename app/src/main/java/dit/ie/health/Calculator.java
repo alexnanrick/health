@@ -22,7 +22,6 @@ public class Calculator extends Activity implements OnClickListener{
     Button btnClear;
     TextView Result;
 
-
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
