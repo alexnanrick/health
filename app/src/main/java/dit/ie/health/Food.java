@@ -154,13 +154,14 @@ public  class Food extends Activity implements OnClickListener {
 
     }
 
-    @Override
+    //temporary fix 
+   /* @Override
     protected void onDestroy() {
 
         foodDB.close();
 
         super.onDestroy();
-    }
+    }*/
 
 
 
