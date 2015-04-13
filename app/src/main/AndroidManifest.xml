@@ -33,26 +33,45 @@
         <activity android:name=".Login"
             android:parentActivityName=".MainActivity"
             android:label="Login"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
 
         <activity android:name=".Exercise"
             android:parentActivityName=".MainActivity"
             android:label="Exercise"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
 
         <activity android:name=".Calculator"
             android:parentActivityName=".MainActivity"
             android:label="Calculator"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
 
         <activity android:name=".Food"
             android:parentActivityName=".MainActivity"
             android:label="Food"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
+
         <activity android:name=".Calories"
             android:parentActivityName=".MainActivity"
             android:label="Calories"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
+
+        <activity android:name=".Steps"
+            android:parentActivityName=".MainActivity"
+            android:label="Your Steps"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".Diary"
+            android:parentActivityName=".MainActivity"
+            android:label="Your Diary"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
     </application>
 
 </manifest>

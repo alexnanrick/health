@@ -21,7 +21,7 @@ public class MainActivity extends Activity implements SensorEventListener {
 
 
     //step sensor
-    //private int value = -1;
+    private int value = -1;
     private Button stepButton;
     private SensorManager mSensorManager;
     private Sensor mStepDetectorSensor;
@@ -37,6 +37,11 @@ public class MainActivity extends Activity implements SensorEventListener {
     Button btnClear;
     TextView Result;
 
+    public int getValue()
+    {
+        return value;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +53,8 @@ public class MainActivity extends Activity implements SensorEventListener {
         setupCalculatorButton();
         setupFoodButton();
         setupCaloriesButton();
+        setupStepsButton();
+        setupDiaryButton();
 
 
         stepButton = (Button) findViewById(R.id.stepButton);
@@ -70,31 +77,30 @@ public class MainActivity extends Activity implements SensorEventListener {
         //display calculator result
         Result = (TextView) findViewById(R.id.textResult);
 
-        /*//display steps taken
+        //display steps taken
         if(value < 0)
         {
-            stepButton.setText("No steps detected yet");
+            stepButton.setText("Steps: ...loading");
         }
         else {
-            stepButton.setText("Steps taken: " + "  " + " " + value);
-        }//end if*/
+            stepButton.setText("Steps: " + "  " + " " + value);
+        }//end if
     }
 
     @Override
     public void onSensorChanged(SensorEvent event) {
         Sensor sensor = event.sensor;
         float[] values = event.values;
-        int value = -1;
 
         if (values.length > 0) {
             value = (int) values[0];
         }
 
         if (sensor.getType() == Sensor.TYPE_STEP_COUNTER) {
-            stepButton.setText("Step Counter Detected : " + value);
+            stepButton.setText("Steps: " + value);
         } else if (sensor.getType() == Sensor.TYPE_STEP_DETECTOR) {
             // For test only. Only allowed value is 1.0 i.e. for step taken
-            stepButton.setText("Step Detector Detected : " + value);
+            stepButton.setText("Steps: " + value);
         }
     }
 
@@ -170,4 +176,26 @@ public class MainActivity extends Activity implements SensorEventListener {
             }
         });
     }//end setupCaloriesButton()
+
+    public void setupStepsButton() {
+
+        Button cButton = (Button) findViewById(R.id.stepButton);
+        cButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Steps.class));
+            }
+        });
+    }
+
+    public void setupDiaryButton() {
+
+        Button cButton = (Button) findViewById(R.id.diaryButton);
+        cButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Diary.class));
+            }
+        });
+    }
 }
