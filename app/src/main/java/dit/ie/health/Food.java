@@ -58,6 +58,12 @@ public  class Food extends Activity implements OnClickListener {
             foodDB.execSQL("CREATE TABLE IF NOT EXISTS food " +
                     "(id integer primary key, name VARCHAR, calories INT);");
 
+            foodDB.execSQL("INSERT INTO FOOD (name, calories) VALUES ('Orange', 45);");
+            foodDB.execSQL("INSERT INTO FOOD (name, calories) VALUES ('Banana', 105);");
+            foodDB.execSQL("INSERT INTO FOOD (name, calories) VALUES ('Apple', 95);");
+            foodDB.execSQL("INSERT INTO FOOD (name, calories) VALUES ('Orange', 45);");
+            foodDB.execSQL("INSERT INTO FOOD (name, calories) VALUES ('Grapefruit', 52);");
+
             // The database on the file system
             File database = getApplicationContext().getDatabasePath("MyFood.db");
 
