@@ -2,165 +2,165 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-a213ad06e5a0ab0780b86ce134e84779f49c50d6.jar" />
-    </item>
-    <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-bc65301377315bbffe224faa03e5eb608203b20b.jar" />
-    </item>
-    <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-f2a92fdf463861b89c62ecf4f34044e5c9572d24.jar" />
-    </item>
-    <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-49523b32140cdb8a4cb884b9965ca70a594275f2.jar" />
-    </item>
-    <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-05e3126f43cef3de50a89925f89cc4272276550e.jar" />
-    </item>
-    <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-953411bdd763608fa145e73e98b9d30f61326157.jar" />
-    </item>
-    <item
-        jar="C:\Users\Zontzor\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-e64fa64078412547c33a25dcf2632f7ab27ccd7d.jar" />
-    </item>
-    <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.0.0\classes.jar"
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-638e3d516a147264791edc9d6bd85029613062f0.jar" />
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-9712cf9de31cce6e4189e884b04b54cd64e613e6.jar" />
     </item>
     <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.0.0\classes.jar"
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-c58fed0e830247f8f4cd8a540ffe523ccee69fcb.jar" />
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-ad56481ab8d6a889d1eccf9756dad68a9dc777c9.jar" />
     </item>
     <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-7f4c460a0e5e42883f6dac0243d27438b1073a39.jar" />
-    </item>
-    <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-66e25e4a4d4c2a180f67ebff500460a6fca36e9c.jar" />
-    </item>
-    <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-57be39ed9898689d1d51d032fb58e9a0777fad03.jar" />
-    </item>
-    <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-94b4ade2a34ef0f5eac9f4d819482260ec68b8e3.jar" />
-    </item>
-    <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-3a9015bb83b7722b0da276603908c06efa1f3a09.jar" />
-    </item>
-    <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-2c71b3971d8bc8fed6103b4ec8349e32ce8b6610.jar" />
-    </item>
-    <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.0.0\classes.jar"
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-17b2474627855356eb7b33121081a7fda528ee29.jar" />
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-e1b51a1bd3edceca56247ceffc339af28b1cfc35.jar" />
     </item>
     <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-0328ff7102d0e11c6f3e7c14666687cb8b436e22.jar" />
-    </item>
-    <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-95a43bdd34a9a2ce294cbf9035bfa5f0b32264e0.jar" />
-    </item>
-    <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="055783146ba9654a725442563be78cad303aad1f">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-c2bf760bf4331cf1b14e2dada75c770d16665814.jar" />
-    </item>
-    <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.0.0\classes.jar"
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-d557ee66e829e839d20efc28f0584357f4012a64.jar" />
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-6242000dbb935281057139706bb13c38bfcd6d03.jar" />
     </item>
     <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.0.0\classes.jar"
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-9006ad364f44817d4b0b582d3cc257791d155998.jar" />
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-8aec1d45e0a3aa75c16929523eee25a57ce73b52.jar" />
     </item>
     <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\classes-417e6a0cbff7c0c6eae47ef2419eadf1131ee906.jar" />
-    </item>
-    <item
-        jar="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="C:\Users\Zontzor\Documents\AndroidWorkspace\Health\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-21849129ea791f5c4f9edd10db1a90f9dfd3096f.jar" />
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-f39d138aa95d8eedfd7d34cd6333d7a97a43d5b7.jar" />
+    </item>
+    <item
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-7709369694f83ef54526baa9c95ec5361d334bfc.jar" />
+    </item>
+    <item
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-0e5755ac754817953eda6cb94ee0c2fc637aa322.jar" />
+    </item>
+    <item
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-f108e23250d27efa4ee5a0c0520a59aa93b25ddf.jar" />
+    </item>
+    <item
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-67f7f4b5e9bcbcde59e8e7ec9b683a3a547737ca.jar" />
+    </item>
+    <item
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-f7842d0b7d313ac8c3618bd2cbe0d55b0268edaa.jar" />
+    </item>
+    <item
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-56585cdb29e5defd1b431c6a33cdb0fb2aa98f76.jar" />
+    </item>
+    <item
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-6e44c170bd9ab43c9d11e991c3f09b3267992690.jar" />
+    </item>
+    <item
+        jar="/Users/nanrick/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-de37b7b6abefbb62566204b18bf257d03ba74792.jar" />
+    </item>
+    <item
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-cf73c7f2a4e503086d61c2e08698e2a990f2aefb.jar" />
+    </item>
+    <item
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-55ea1a3ae4d1e0677cdf81a8935292526081ac52.jar" />
+    </item>
+    <item
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-256e9595d7069e410bdd4b9ae03d9fb57d35928b.jar" />
+    </item>
+    <item
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="055783146ba9654a725442563be78cad303aad1f">
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-70f9ab4436e130c8b08751e1c0014ecf1e334e1f.jar" />
+    </item>
+    <item
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-771980fac4d1a1e274a52caf3166d85f14992d7b.jar" />
+    </item>
+    <item
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-6a8f065de59a507b3499c5435c32777ba7462e2e.jar" />
+    </item>
+    <item
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-b27da4800d8409de6fd9ac0975e34158ddd5ed1e.jar" />
+    </item>
+    <item
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-60f67474bbc106a004a4f930a1a2ece497367a57.jar" />
+    </item>
+    <item
+        jar="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
+        <dex dex="/Users/nanrick/Documents/AndroidWorkspace/Health/app/build/intermediates/pre-dexed/debug/classes-52fd67e06dd8c8993df002d8a9ab4d7827c9fb5a.jar" />
     </item>
 
 </items>
