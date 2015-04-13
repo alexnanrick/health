@@ -49,10 +49,9 @@
             android:parentActivityName=".MainActivity"
             android:label="Food"
             android:theme="@style/AppTheme"/>
-
-        <activity android:name=".Register"
-            android:parentActivityName=".Login"
-            android:label="Register"
+        <activity android:name=".Calories"
+            android:parentActivityName=".MainActivity"
+            android:label="Calories"
             android:theme="@style/AppTheme"/>
     </application>
 

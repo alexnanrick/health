@@ -12,7 +12,7 @@
         android:id="@+id/fitnessText"
         android:text="Check your calories burnt"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.03" />
+         />
 
     <TableLayout
         android:layout_width="match_parent"
@@ -22,49 +22,49 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/exerciseSpinner"
         android:text="Exercise"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.03" />
+        />
 
     <Spinner
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:id="@+id/spinner"
         android:text="spinner"
         android:layout_gravity="center_horizontal" />
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/ageSpinner"
         android:text="Age"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.03" />
+         />
 
 
     <Spinner
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:id="@+id/spinner2"
         android:text="spinner"
         android:layout_gravity="center_horizontal" />
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/weightSpinner"
         android:text="Weight in Kg"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.03" />
+        />
 
     <Spinner
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:id="@+id/spinner3"
         android:text="spinner"
         android:layout_gravity="center_horizontal" />
@@ -72,12 +72,12 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="50dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/distanceSpinner"
             android:text="Distance in km"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="0.03" />
+             />
 
         <Spinner
             android:layout_width="match_parent"
@@ -97,5 +97,5 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/resultText"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.03" />
+         />
 </LinearLayout>

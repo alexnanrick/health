@@ -14,6 +14,35 @@
          android.hardware.sensor.stepdetector
    </string>
 
+    <string-array name="exerciseType">
+        <item>Walking</item>
+        <item>Running</item>
+        <item>Hiking</item>
+        <item>Cycling</item>
+        <item>Sedentary</item>
+    </string-array>
+
+    <string-array name="age">
+        <item>15 - 25</item>
+        <item>25 - 35</item>
+        <item>35 - 45</item>
+        <item>45 - up</item>
+    </string-array>
+
+    <string-array name="weight">
+        <item>40 - 60</item>
+        <item>60 - 80</item>
+        <item>80- 120</item>
+        <item>120 - up</item>
+    </string-array>
+
+    <string-array name="distance">
+        <item>1 - 5</item>
+        <item>5 - 10</item>
+        <item>10- 15</item>
+        <item>15 - up</item>
+    </string-array>
+
 
 
 </resources>
