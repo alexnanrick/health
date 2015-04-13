@@ -48,15 +48,12 @@ public  class Calories extends Activity implements OnClickListener {
         //spinner 4
         Spinner spinner4 = (Spinner) findViewById(R.id.spinner4);
         ArrayAdapter<CharSequence> adapter4 = ArrayAdapter.createFromResource(this,
-                R.array.weight, android.R.layout.simple_spinner_item);
+                R.array.distance, android.R.layout.simple_spinner_item);
         adapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner4.setAdapter(adapter4);
 
         text = (TextView) findViewById(R.id.resultText);
         text.setText("Your average is: " + burntCal);
-
-
-
 
     }
 

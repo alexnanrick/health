@@ -56,7 +56,7 @@
 
         <activity android:name=".Calories"
             android:parentActivityName=".MainActivity"
-            android:label="Calories"
+            android:label="Your Fitness"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
 

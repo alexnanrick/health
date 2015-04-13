@@ -10,10 +10,10 @@ import android.widget.TextView;
 
 public  class Exercise extends Activity implements OnClickListener{
 
-   //pull missing calories from the calorie calculator database here
-    //missing code....
-   private float calories = 2600;//temp var
    private TextView cal1,cal2,cal3;
+   Food b = new Food();
+   private float calories;
+
 
 
     //calculate exercise based on calories
@@ -40,6 +40,7 @@ public  class Exercise extends Activity implements OnClickListener{
     //display running time based on the calories consumed
     public void onExercise()
     {
+        calories = b.getFruits();
         cal1 = (TextView) findViewById(R.id.textView);
         cal2 = (TextView) findViewById(R.id.textView2);
         cal3 = (TextView) findViewById(R.id.textView3);

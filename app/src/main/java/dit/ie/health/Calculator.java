@@ -28,15 +28,6 @@ public class Calculator extends Activity implements OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calc_view);
 
-        /*btnPlus.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v)
-            {
-                Intent inf=new Intent(Calculator.this,MainActivity.class);
-
-                startActivity(inf);
-            }
-        });*/
 
         //operation fields from the main screen
         operand1 = (EditText) findViewById(R.id.editOperand1);
