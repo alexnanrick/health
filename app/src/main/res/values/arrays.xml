@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="text_size_entries">
-        <item>16 pt</item>
+     
         <item>18 pt</item>
         <item>20 pt</item>
         <item>22 pt</item>
         <item>24 pt</item>
         <item>26 pt</item>
-        <item>28</item>
-        <item>30</item>
-        <item>32</item>
+        <item>28 pt</item>
+        <item>30 pt</item>
+        <item>32 pt</item>
     </string-array>
 
     <string-array name="text_size_values">
-        <item>16</item>
+
         <item>18</item>
         <item>20</item>
         <item>22</item>
