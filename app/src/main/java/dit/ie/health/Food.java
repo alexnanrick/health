@@ -31,15 +31,14 @@ public  class Food extends Activity implements OnClickListener {
         setContentView(R.layout.food_view);
 
         // link buttons to xml buttons
-        createDBButton = (Button) findViewById(R.id.createDBButton);
         addFoodButton = (Button) findViewById(R.id.addFoodButton);
         deleteFoodButton = (Button) findViewById(R.id.deleteFoodButton);
         getFoodButton = (Button) findViewById(R.id.getFoodButton);
-        deleteDBButton = (Button) findViewById(R.id.deleteDBButton);
         nameEditText = (EditText) findViewById(R.id.nameEditText);
         caloriesEditText = (EditText) findViewById(R.id.caloriesEditText);
         foodListEditText = (EditText) findViewById(R.id.foodListEditText);
 
+        createDatabase(null);
     }
 
     @Override
@@ -95,12 +94,6 @@ public  class Food extends Activity implements OnClickListener {
             Log.e("FOOD ERROR", "Error Creating Database");
 
         }
-
-        // Make buttons clickable since the database was created (initialised as false)
-        addFoodButton.setClickable(true);
-        deleteFoodButton.setClickable(true);
-        getFoodButton.setClickable(true);
-        deleteDBButton.setClickable(true);
 
     }
 
