@@ -43,6 +43,8 @@
         <item>15 - up</item>
     </string-array>
 
-
+    <string name="notesEditText">Enter notes</string>
+    <string name="notesTextView">Notes</string>
+    <string name="title_activity_settings">SettingsActivity</string>
 
 </resources>
