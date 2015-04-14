@@ -5,24 +5,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
-import android.widget.EditText;
 
 
 public class MainActivity extends Activity {
 
-
-    //calculator
-    EditText operand1;
-    EditText operand2;
-    Button btnPlus;
-    Button btnSubtract;
-    Button btnDivide;
-    Button btnMultiply;
-    Button btnClear;
-    TextView Result;
     Button stepButton;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,23 +28,6 @@ public class MainActivity extends Activity {
         //display steps menu
         stepButton = (Button) findViewById(R.id.stepButton);
         stepButton.setText("Steps");
-
-
-
-        //calculator
-        operand1 = (EditText) findViewById(R.id.editOperand1);
-        operand2 = (EditText) findViewById(R.id.editOperand2);
-
-        //associate buttons;
-        btnPlus = (Button) findViewById(R.id.btnPlus);
-        btnSubtract = (Button) findViewById(R.id.btnSubtract);
-        btnDivide = (Button) findViewById(R.id.btnDivide);
-        btnMultiply = (Button) findViewById(R.id.btnMultiply);
-        btnClear = (Button) findViewById(R.id.btnClr);
-        //end buttons
-
-        //display calculator result
-        Result = (TextView) findViewById(R.id.textResult);
     }
 
     public void setupLoginButton() {

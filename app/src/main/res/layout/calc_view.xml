@@ -14,27 +14,20 @@
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:gravity="center"
-        android:text="Calorie Calculator"
+        android:text="Your Calories"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
         android:id="@+id/editOperand1"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:gravity="center"
         android:inputType="numberDecimal"
         android:layout_marginTop="20dp" >
         <requestFocus />
 
     </EditText>
-
-    <EditText
-        android:id="@+id/editOperand2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:layout_marginTop="20dp"/>
 
     <TableRow
         android:id="@+id/tableRow1"
@@ -43,44 +36,22 @@
         android:gravity="center"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
-        android:background="#007a3d"
         >
-        <Button
-            android:id="@+id/btnPlus"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:text="+" />
+
 
         <Button
-            android:id="@+id/btnSubtract"
-            android:layout_width="50dp"
+            android:id="@+id/btnSubmit"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="-" />
-
-        <Button
-            android:id="@+id/btnDivide"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:text="/" />
-
-        <Button
-            android:id="@+id/btnMultiply"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:text="*" />
+            android:text="SUBMIT" />
 
         <Button
             android:id="@+id/btnClr"
-            android:layout_width="50dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             style="?android:attr/buttonStyleSmall"
-            android:text="CLR" />
-
-
-
+            android:text="CLEAR" />
     </TableRow>
-
-
 
     <TextView
         android:id="@+id/textView2"
@@ -97,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="0.00"
+        android:text="0"
         android:textAppearance="?android:attr/textAppearanceLarge" /> -->
 
 </LinearLayout>
