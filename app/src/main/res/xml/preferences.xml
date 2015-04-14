@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="pref_text_bold"
+        android:title="Make Text Bold"
+        android:summary="Makes the note text bold"
+        android:defaultValue="false" />
+
+    <ListPreference
+        android:key="pref_text_size"
+        android:title="Text Size"
+        android:summary="Pick the text size"
+        android:entries="@array/text_size_entries"
+        android:entryValues="@array/text_size_values"
+        android:defaultValue="16"/>
+
+</PreferenceScreen>
