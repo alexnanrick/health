@@ -12,18 +12,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.EditText;
-import java.sql.Time;
-
 import static android.os.SystemClock.elapsedRealtime;
-import static android.os.SystemClock.elapsedRealtimeNanos;
 
 
 public class MainActivity extends Activity implements SensorEventListener {
-
-    //get exercise and calories values
-    Exercise ex = new Exercise();
-    float calories = ex.getCalories();
-
 
 
     //step sensor
@@ -43,10 +35,6 @@ public class MainActivity extends Activity implements SensorEventListener {
     Button btnClear;
     TextView Result;
 
-    public int getValue()
-    {
-        return value;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,10 +78,8 @@ public class MainActivity extends Activity implements SensorEventListener {
         {
             stepButton.setText("Steps: ...loading");
         }
-        else {
-            stepButton.setText("Steps: " + "  " + " " + value);
-        }//end if
     }
+
 
     //return time since boot in hours
     long time = (((elapsedRealtime() / 1000) / 60)/60);
@@ -108,25 +94,40 @@ public class MainActivity extends Activity implements SensorEventListener {
         }
 
         //reset step counter after 24 hour period
-        if (time >= 24)
+        if (time > 24 )
         {
             value = 0;
-            values[0] = 0;
+            for(int i=0;i<values.length;i++)
+            {
+                values[i] = 0;
+            }
+
+            time = 0;
         }
 
 
         if (sensor.getType() == Sensor.TYPE_STEP_COUNTER) {
-            stepButton.setText("Counting Steps: " + value);
+             stepButton.setText("Counting Steps: " + value);
         }
         else if (sensor.getType() == Sensor.TYPE_STEP_DETECTOR) {
             // For test only. Only allowed value is 1.0 i.e. for step taken
             stepButton.setText("Counting Steps: " + value);
+        }
+        else
+        {
+            stepButton.setText(value);
         }
 
 
     }
 
 
+
+    //get number of steps
+    public int getValue()
+    {
+        return value;
+    }
 
     protected void onResume() {
         super.onResume();
