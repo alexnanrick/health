@@ -16,10 +16,7 @@ public class SpinnerActivity extends Activity implements OnItemSelectedListener 
         return burn;
     }
 
-
-
-    public void onItemSelected(AdapterView<?> parent, View view,
-                               int pos, long id) {
+    public void onItemSelected(AdapterView<?> parent, View view,int pos, long id) {
 
         parent.getItemAtPosition(1);
         Spinner spinner = (Spinner) findViewById(R.id.spinner);

@@ -72,6 +72,12 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
 
+        <activity android:name=".Register"
+            android:parentActivityName=".Login"
+            android:label="Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
         <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings" >
