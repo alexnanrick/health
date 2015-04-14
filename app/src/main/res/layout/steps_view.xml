@@ -3,10 +3,29 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="Start Moving"
+        android:layout_gravity="top" />
+
 
     <TextView
+        android:name="android.hardware.sensor.stepcounter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView4"
         android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:name="android.hardware.sensor.stepcounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_gravity="center_horizontal" />
+
+
+
+
 </LinearLayout>

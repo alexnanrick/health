@@ -5,6 +5,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:paddingBottom="0dp"
+    android:textColor="#FBF8EF"
     tools:context=".MainActivity">
 
     <Button
@@ -13,47 +14,47 @@
         android:layout_height="73dp"
         android:text="Login"
         android:onClick="onLoginClick"
-        android:background="#007a3d"/>
+        />
 
     <Button android:name="@string/step_counter"
         android:layout_width="match_parent"
         android:layout_height="73dp"
         android:elevation="5dp"
         android:id="@+id/stepButton"
-        android:background="#59194B"/>
+       />
 
     <Button
         android:id="@+id/exButton"
         android:layout_width="match_parent"
         android:layout_height="73dp"
         android:text="Calculator"
-        android:background="#007a3d"/>
+        />
 
     <Button
         android:id="@+id/textview2"
         android:layout_width="match_parent"
         android:layout_height="73dp"
         android:text="Exercise"
-        android:background="#59194B"/>
+        />
 
     <Button
         android:id="@+id/foodButton"
         android:layout_width="match_parent"
         android:layout_height="73dp"
         android:text="Food Database"
-        android:background="#007a3d"/>
+        />
 
     <Button
         android:id="@+id/calButton"
         android:layout_width="match_parent"
         android:layout_height="73dp"
         android:text="Your Fitness"
-        android:background="#59194B"/>
+        />
     <Button
         android:id="@+id/diaryButton"
         android:layout_width="match_parent"
         android:layout_height="73dp"
         android:text="Your Diary"
-        android:background="#007a3d"/>
+        />
 
 </LinearLayout>

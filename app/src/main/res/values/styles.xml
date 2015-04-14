@@ -1,10 +1,20 @@
 <resources>
-    <color name="background">#59194B</color>
-    <color name="text">#DADA55</color>
+    <color name="primary" id="@color/primary">#ff38c7ff</color>
+    <color name="primary_dark" id="@color/primary_dark">#ff7460e8</color>
+    <color name="accent" id="@color/accent">#ff20cd93</color>
+    <color name="text" id="@color/text">#fff3ddf5</color>
+    <color name="button" id="@color/button">#ff5da5f5</color>
 
-    <style name="AppTheme" >
-        <item name="android:windowBackground">@color/background</item>
-        <item name="android:textColor">@color/text</item>
+    <style name="AppTheme" parent="android:ThemeOverlay.Material.Dark">
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="android:colorPrimary">@color/primary</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/text</item>
+        <item name="android:buttonBarButtonStyle">@color/button</item>
     </style>
 
 
