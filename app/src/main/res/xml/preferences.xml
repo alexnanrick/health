@@ -3,9 +3,11 @@
 
     <CheckBoxPreference
         android:key="pref_text_bold"
-        android:title="Make Text Bold"
-        android:summary="Makes the note text bold"
+        android:title="Make Text Bold and Italic"
+        android:summary="Makes the note text bold and Italic"
         android:defaultValue="false" />
+
+
 
     <ListPreference
         android:key="pref_text_size"
