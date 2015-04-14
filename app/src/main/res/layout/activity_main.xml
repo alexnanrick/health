@@ -5,6 +5,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:paddingBottom="0dp"
+    android:textColor="#FBF8EF"
     tools:context=".MainActivity">
 
     <Button
