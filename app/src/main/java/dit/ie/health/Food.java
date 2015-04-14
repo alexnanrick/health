@@ -16,7 +16,6 @@ import java.io.File;
 
 public  class Food extends Activity implements OnClickListener {
 
-
     SQLiteDatabase foodDB = null;
 
     float b = 45;
@@ -49,6 +48,7 @@ public  class Food extends Activity implements OnClickListener {
 
     public float getFruits()
     {
+
         return b;
     }
 
@@ -64,8 +64,6 @@ public  class Food extends Activity implements OnClickListener {
             // Execute an SQL statement that isn't select
             foodDB.execSQL("CREATE TABLE IF NOT EXISTS food " +
                     "(id integer primary key, name VARCHAR, calories INT);");
-
-
 
 
             foodDB.execSQL("INSERT INTO FOOD (name, calories) VALUES ('banana', 45);");
@@ -86,19 +84,12 @@ public  class Food extends Activity implements OnClickListener {
             } else {
                 Toast.makeText(this, "Database Missing", Toast.LENGTH_SHORT).show();
             }
-
-        }
-
-        catch(Exception e) {
-
+        }catch(Exception e) {
             Log.e("FOOD ERROR", "Error Creating Database");
-
         }
-
     }
 
     public void addFood(View view) {
-
         // Get the food name and calories entered
         String foodName = nameEditText.getText().toString();
         String foodCalories = caloriesEditText.getText().toString();
@@ -106,7 +97,6 @@ public  class Food extends Activity implements OnClickListener {
         // Execute SQL statement to insert new data
         foodDB.execSQL("INSERT INTO food (name, calories) VALUES ('" +
                 foodName + "', '" + foodCalories + "');");
-
     }
 
     public void getFood(View view) {
@@ -144,9 +134,7 @@ public  class Food extends Activity implements OnClickListener {
 
             Toast.makeText(this, "No Results to Show", Toast.LENGTH_SHORT).show();
             foodListEditText.setText("");
-
         }
-
     }
 
     public void deleteFood(View view) {
@@ -162,23 +150,11 @@ public  class Food extends Activity implements OnClickListener {
         catch(Exception e) {
             Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
         }
-
     }
 
     public void deleteDatabase(View view) {
 
         // Delete database
         this.deleteDatabase("MyFood");
-
     }
-
-    //temporary fix 
-   /* @Override
-    protected void onDestroy() {
-
-        foodDB.close();
-
-        super.onDestroy();
-    }*/
-
 }

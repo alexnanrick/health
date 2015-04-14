@@ -12,8 +12,7 @@ public  class Exercise extends Activity implements OnClickListener{
 
    private TextView cal1,cal2,cal3;
    Food b = new Food();
-   private float calories;
-
+   public float calories;
 
 
     //calculate exercise based on calories
@@ -41,6 +40,7 @@ public  class Exercise extends Activity implements OnClickListener{
     public void onExercise()
     {
         calories = b.getFruits();
+
         cal1 = (TextView) findViewById(R.id.textView);
         cal2 = (TextView) findViewById(R.id.textView2);
         cal3 = (TextView) findViewById(R.id.textView3);

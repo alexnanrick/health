@@ -1,8 +1,10 @@
 package dit.ie.health;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -10,13 +12,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.view.View.OnClickListener;
+import android.widget.NumberPicker;
 
-public class Calculator extends Activity implements OnClickListener{
 
-    EditText operand1;
-    Button btnSubmit;
-    Button btnClear;
-    TextView Result;
+public class Calculator extends Activity implements OnClickListener, NumberPicker.OnValueChangeListener {
+
+    private static TextView tv;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -24,38 +25,49 @@ public class Calculator extends Activity implements OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calc_view);
 
-
-        //operation fields from the main screen
-        operand1 = (EditText) findViewById(R.id.editOperand1);
-        //associate buttons;
-        btnClear = (Button) findViewById(R.id.btnClr);
-        btnSubmit = (Button) findViewById(R.id.btnSubmit);
-        //associate result textfield
-        Result = (TextView) findViewById(R.id.textResult);
-
-        //add functionality
-        btnSubmit.setOnClickListener(new View.OnClickListener()
-        {
-
-            @Override
-            public void onClick(View v)
-            {
-                try {
-                    float oper1 = Float.parseFloat(operand1.getText().toString());
-                    Result.setText(Float.toString(oper1));
-                }catch(Exception e){}
-            }
-        });
-
-        btnClear.setOnClickListener(new View.OnClickListener()
+        tv = (TextView) findViewById(R.id.textView1);
+        Button b = (Button) findViewById(R.id.button11);
+        b.setOnClickListener(new OnClickListener()
         {
             @Override
-            public void onClick(View v)
-            {
-                operand1.setText("");
-                Result.setText("0");
+            public void onClick(View v) {
+                show();
             }
         });
+    }
+
+    public void show()
+    {
+        final Dialog d = new Dialog(Calculator.this);
+        d.setTitle("Your Calories");
+        d.setContentView(R.layout.dialog);
+        Button b1 = (Button) d.findViewById(R.id.button1);
+        Button b2 = (Button) d.findViewById(R.id.button2);
+        final NumberPicker np = (NumberPicker) d.findViewById(R.id.numberPicker1);
+        np.setMaxValue(5000);
+        np.setMinValue(0);
+        np.setWrapSelectorWheel(false);
+        np.setOnValueChangedListener(this);
+        b1.setOnClickListener(new OnClickListener()
+        {
+            @Override
+            public void onClick(View v) {
+                tv.setText(String.valueOf(np.getValue()));
+                d.dismiss();
+            }
+        });
+        b2.setOnClickListener(new OnClickListener()
+        {
+            @Override
+            public void onClick(View v) {
+                d.dismiss();
+            }
+        });
+        d.show();
+    }
+
+    public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
+        Log.i("Your Calories: ", "" + newVal);
     }
 
     @Override
@@ -80,6 +92,4 @@ public class Calculator extends Activity implements OnClickListener{
         Intent i = new Intent(this, Calculator.class);
         startActivity(i);
     }
-
-
 }

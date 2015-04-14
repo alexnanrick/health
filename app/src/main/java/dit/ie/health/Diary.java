@@ -1,6 +1,5 @@
 package dit.ie.health;
 
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -12,20 +11,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
-import android.widget.TextView;
-
 
 public  class Diary extends Activity implements OnClickListener {
-
-
-
-
-
-
 
     @Override
     public void onClick(View v) {
@@ -33,12 +22,10 @@ public  class Diary extends Activity implements OnClickListener {
         startActivity(i);
     }
 
-
     EditText notesEditText;
     Button btnSettings;
     private static final int SETTINGS_INFO = 1;
 
-    // You can define what keys and values are passed to onCreate
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,10 +33,9 @@ public  class Diary extends Activity implements OnClickListener {
 
         notesEditText = (EditText) findViewById(R.id.notesEditText);
 
-        // 1. Make sure there is data to retrieve
         if(savedInstanceState != null){
 
-            String notes = savedInstanceState.getString("NOTES");
+            String notes = savedInstanceState.getString("Your Diary");
 
             notesEditText.setText(notes);
 
@@ -61,7 +47,6 @@ public  class Diary extends Activity implements OnClickListener {
         if(!sPNotes.equals("EMPTY")){
 
             notesEditText.setText(sPNotes);
-
         }
 
         // 3. Get a reference to the settings button

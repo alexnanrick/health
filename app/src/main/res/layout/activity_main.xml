@@ -27,7 +27,7 @@
         android:id="@+id/exButton"
         android:layout_width="match_parent"
         android:layout_height="73dp"
-        android:text="Calculator"
+        android:text="Your Calories"
         />
 
     <Button

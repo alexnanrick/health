@@ -8,22 +8,22 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.graphics.Color;
-import android.widget.Toast;
-
 
 public  class Steps extends Activity implements SensorEventListener {
 
-    private TextView text;
-    private TextView text2;
+    private Button text;
+    private Button text2;
     private Button button;
 
     private int value = -1;
     private int data = 0;
-    private long lastUpdate;
+    //private long lastUpdate;
 
     private SensorManager mSensorManager;
     private Sensor mStepDetectorSensor;
@@ -31,6 +31,8 @@ public  class Steps extends Activity implements SensorEventListener {
     private SensorManager sensorManager;
 
     private boolean color = false;
+
+
 
 
     @Override
@@ -43,20 +45,20 @@ public  class Steps extends Activity implements SensorEventListener {
         mStepDetectorSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_STEP_DETECTOR);
 
 
-        text = (TextView) findViewById(R.id.textView4);
-        text2 = (TextView) findViewById(R.id.textView5);
+        text = (Button) findViewById(R.id.textView4);
+        text2 = (Button) findViewById(R.id.textView5);
         button  = (Button) findViewById(R.id.button);
 
         button.setBackgroundColor(Color.GREEN);
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
-        lastUpdate = System.currentTimeMillis();
+        //lastUpdate = System.currentTimeMillis();
 
         if(value < 0)
         {
             text2.setText("loading...");
         }
-
     }
+
 
     private void getAccelerometer(SensorEvent event) {
         float[] values = event.values;
@@ -78,6 +80,8 @@ public  class Steps extends Activity implements SensorEventListener {
             data++;
             text.setText("You are taking: " + ( data / 2  )+ " steps");
 
+
+
             if (color) {
                 button.setBackgroundColor(Color.GREEN);
             } else {
@@ -96,13 +100,14 @@ public  class Steps extends Activity implements SensorEventListener {
             value = (int) values[0];
         }
 
+
         if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
             getAccelerometer(event);
         }
 
 
         if (sensor.getType() == Sensor.TYPE_STEP_COUNTER) {
-            text2.setText("You have taken: " + value + " today");
+            text2.setText("You have taken:" + value + " steps today");
 
         }
         else if (sensor.getType() == Sensor.TYPE_STEP_DETECTOR) {
