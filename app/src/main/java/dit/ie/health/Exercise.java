@@ -34,7 +34,7 @@ public  class Exercise extends Activity implements OnClickListener{
     public void onClick(View v) {
                 Intent i = new Intent(this, Exercise.class);
                 startActivity(i);
-        }
+        }//end onClick()
 
     //display running time based on the calories consumed
     public void onExercise()
@@ -51,7 +51,5 @@ public  class Exercise extends Activity implements OnClickListener{
         cal1.setText("run for: " + result1 + " hours");
         cal2.setText("walk for: " + result2 + " hours");
         cal3.setText("cycle for: " + result3 + " hours");
-
-    }
-
+    }//end onExercise()
 }

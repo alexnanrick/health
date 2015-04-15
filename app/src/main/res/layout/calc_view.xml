@@ -8,8 +8,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-
-
     <Button
         android:id="@+id/button11"
         android:layout_width="fill_parent"
@@ -22,7 +20,7 @@
         android:id="@+id/textView1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
+        android:textSize="30dp"
         android:text="Submit your calorie intake" />
 
 </RelativeLayout>

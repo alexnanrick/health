@@ -9,7 +9,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.view.View.OnClickListener;
 import android.widget.NumberPicker;
@@ -40,12 +39,14 @@ public class Calculator extends Activity implements OnClickListener, NumberPicke
     {
         final Dialog d = new Dialog(Calculator.this);
         d.setTitle("Your Calories");
+
         d.setContentView(R.layout.dialog);
         Button b1 = (Button) d.findViewById(R.id.button1);
-        Button b2 = (Button) d.findViewById(R.id.button2);
+
         final NumberPicker np = (NumberPicker) d.findViewById(R.id.numberPicker1);
+
         np.setMaxValue(5000);
-        np.setMinValue(0);
+        np.setMinValue(100);
         np.setWrapSelectorWheel(false);
         np.setOnValueChangedListener(this);
         b1.setOnClickListener(new OnClickListener()
@@ -53,13 +54,6 @@ public class Calculator extends Activity implements OnClickListener, NumberPicke
             @Override
             public void onClick(View v) {
                 tv.setText(String.valueOf(np.getValue()));
-                d.dismiss();
-            }
-        });
-        b2.setOnClickListener(new OnClickListener()
-        {
-            @Override
-            public void onClick(View v) {
                 d.dismiss();
             }
         });
