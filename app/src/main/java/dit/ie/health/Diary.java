@@ -93,12 +93,16 @@ public  class Diary extends Activity implements OnClickListener {
             // Set the text to bold
             notesEditText.setTypeface(null, Typeface.BOLD_ITALIC);
 
-        } else {
+        }
+
+        else {
 
             // If not checked set the text to normal
             notesEditText.setTypeface(null, Typeface.NORMAL);
 
         }
+
+
 
         // Get the value stored in the list preference or give a value of 16
         String textSizeStr = sharedPreferences.getString("pref_text_size", "16");
@@ -126,11 +130,7 @@ public  class Diary extends Activity implements OnClickListener {
     // 2. Will save key value pairs to SharedPreferences
     private void saveSettings(){
 
-        // SharedPreferences allow you to save data even if the user kills the app
-        // MODE_PRIVATE : Preferences shared only by your app
-        // MODE_WORLD_READABLE : All apps can read
-        // MODE_WORLD_WRITABLE : All apps can write
-        // edit() allows us to enter key vale pairs
+
         SharedPreferences.Editor sPEditor = getPreferences(Context.MODE_PRIVATE).edit();
 
         // Add the key "NOTES" and assign it to the value

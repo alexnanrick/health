@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="text_size_entries">
-     
+
         <item>18 pt</item>
         <item>20 pt</item>
         <item>22 pt</item>

@@ -12,8 +12,8 @@ import android.widget.TextView;
 
 public  class Calories extends Activity implements OnClickListener {
 
-    SpinnerActivity a = new SpinnerActivity();
-    private float burntCal = a.getBurn();
+    //SpinnerActivity a = new SpinnerActivity();
+    //private float burntCal = a.getBurn();
     private TextView text;
 
 
@@ -53,7 +53,7 @@ public  class Calories extends Activity implements OnClickListener {
         spinner4.setAdapter(adapter4);
 
         text = (TextView) findViewById(R.id.resultText);
-        text.setText("Your average is: " + burntCal);
+       // text.setText("Your average is: " + burntCal);
 
     }
 
