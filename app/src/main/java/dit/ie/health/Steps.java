@@ -131,8 +131,8 @@ public  class Steps extends Activity implements SensorEventListener {
 
     /*protected void onStop() {
         super.onStop();
-        mSensorManager.unregisterListener((android.hardware.SensorEventListener) this, mStepCounterSensor);
-        mSensorManager.unregisterListener((android.hardware.SensorEventListener) this, mStepDetectorSensor);
+        mSensorManager.unregisterListener( this, mStepCounterSensor);
+        mSensorManager.unregisterListener( this, mStepDetectorSensor);
     }//end onStop()*/
 
     /*@Override

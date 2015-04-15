@@ -9,7 +9,7 @@ import android.widget.Spinner;
 
 public class SpinnerActivity extends Activity implements OnItemSelectedListener {
 
-    private float burn = 0;
+    private float burn = 250;
 
     public float getBurn()
     {
@@ -21,23 +21,13 @@ public class SpinnerActivity extends Activity implements OnItemSelectedListener 
         parent.getItemAtPosition(1);
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
         spinner.setOnItemSelectedListener(this);
-
-        if(parent.getItemAtPosition(0) == 0)
-        {
-            burn = 232;
-        }
-        else if(parent.getItemAtPosition(pos) == 1)
-        {
-            burn = 300;
-        }
-
     }
 
 
 
+
+
     public void onNothingSelected(AdapterView<?> parent) {
-
-        burn = 0;
-
+        burn = 250;
     }
 }

@@ -15,7 +15,7 @@
    </string>
 
     <string-array name="exerciseType">
-        <item>Walking</item>
+        <item id="0">Walking</item>
         <item>Running</item>
         <item>Hiking</item>
         <item>Cycling</item>

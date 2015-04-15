@@ -12,8 +12,8 @@ import android.widget.TextView;
 
 public  class Calories extends Activity implements OnClickListener {
 
-    //SpinnerActivity a = new SpinnerActivity();
-    //private float burntCal = a.getBurn();
+    SpinnerActivity a = new SpinnerActivity();
+    private float burntCal = a.getBurn();
     private TextView text;
 
 
@@ -33,7 +33,7 @@ public  class Calories extends Activity implements OnClickListener {
 
         //spinner 2
         Spinner spinner2 = (Spinner) findViewById(R.id.spinner2);
-        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,
+        ArrayAdapter adapter2 = ArrayAdapter.createFromResource(this,
                 R.array.age, android.R.layout.simple_spinner_item);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner2.setAdapter(adapter2);
@@ -53,9 +53,22 @@ public  class Calories extends Activity implements OnClickListener {
         spinner4.setAdapter(adapter4);
 
         text = (TextView) findViewById(R.id.resultText);
-       // text.setText("Your average is: " + burntCal);
+       //text.setText("Your average is: " + burntCal);
+
+        if( adapter2.getItemId(0) == 1)
+        {
+            text.setText("Your average is: " + 999);
+        }
+        else
+        {
+            text.setText("Your average is: " + 1000);
+        }
+
+
 
     }
+
+
 
 
     @Override
